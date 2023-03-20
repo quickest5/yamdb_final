@@ -54,11 +54,10 @@ def get_token(request):
             serializer.data,
             status=status.HTTP_400_BAD_REQUEST
         )
-    else:
-        return Response(
-            {"error": "Invalid serializer data"},
-            status=status.HTTP_400_BAD_REQUEST
-        )
+    return Response(
+        {"error": "Invalid serializer data"},
+        status=status.HTTP_400_BAD_REQUEST
+    )
 
 
 class UserViewSet(NotPUTViewSet):
@@ -87,11 +86,15 @@ class UserViewSet(NotPUTViewSet):
             if serializer.is_valid(raise_exception=True):
                 serializer.save(role=request.user.role)
                 return Response(serializer.data, status=status.HTTP_200_OK)
-        else:
+
             return Response(
                 {"error": "Invalid request method"},
                 status=status.HTTP_400_BAD_REQUEST
             )
+        return Response(
+            {"error": "Invalid request method"},
+            status=status.HTTP_400_BAD_REQUEST
+        )
 
 
 class ReviewViewSet(viewsets.ModelViewSet):
