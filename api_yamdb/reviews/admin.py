@@ -1,11 +1,8 @@
 from django.contrib import admin
-from import_export import resources, fields
+from import_export import fields, resources
 from import_export.admin import ImportExportModelAdmin
 from import_export.widgets import ForeignKeyWidget
-
-from reviews.models import (
-    Category, Comment, Review, Genre, Title, User
-)
+from reviews.models import Category, Comment, Genre, Review, Title, User
 
 
 class CategoryResource(resources.ModelResource):
