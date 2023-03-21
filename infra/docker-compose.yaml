@@ -15,7 +15,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: killtsunami/api_yamdb:v1.11
+    image: killtsunami/api_yamdb:latest
     restart: always
     volumes:
 
