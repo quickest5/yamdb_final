@@ -2,7 +2,7 @@
 yamdb_final
 [![api_yamdb_workflow](https://github.com/quickest5/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/quickest5/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
-https://practicum-back.ddns.net/redoc/
+https://practicum-back.ddns.net/redoc/  
 
 # Описание проекта
 Проект YaMDb предназначен для хранения информации о произведениях и отзывов пользователей на эти произведения. Администратор может добавлять произведения, категории и жанры, а пользователи могут оставлять отзывы, комментарии и ставить оценки произведениям.
