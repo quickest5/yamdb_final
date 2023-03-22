@@ -37,7 +37,7 @@ docker-compose exec web python manage.py createsuperuser
 docker-compose exec web python manage.py collectstatic --no-input
 ```
 
-Команда для заполнения базы данными
+# Команда для заполнения базы данными
 Для заполнения базы данных предварительно необходимо создать суперпользователя (см. предыдущий раздел).
 Затем выполните следующую команду:
 
